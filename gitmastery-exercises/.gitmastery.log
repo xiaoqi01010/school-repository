@@ -24,3 +24,62 @@
 [2025-08-16 14:00:00,971] [WARNING] You don't have a fork yet, creating one
 [2025-08-16 14:00:00,974] [INFO] Running command: ['gh', 'repo', 'fork', 'git-mastery/progress', '--default-branch-only', '--fork-name', 'xiaoqi01010-gitmastery-progress']
 [2025-08-16 14:00:01,685] [INFO] Running command: ['gh', 'repo', 'clone', 'xiaoqi01010/xiaoqi01010-gitmastery-progress', 'progress']
+[2025-08-16 16:01:48,373] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'download', 'push-over']
+[2025-08-16 16:01:48,377] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:01:48,683] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:01:48,690] [INFO] Checking if push-over is available
+[2025-08-16 16:01:48,706] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:01:49,113] [DEBUG] https://raw.githubusercontent.com:443 "HEAD /git-mastery/exercises/refs/heads/main/push_over/.gitmastery-exercise.json HTTP/1.1" 200 0
+[2025-08-16 16:01:49,114] [INFO] Downloading push-over to push-over/
+[2025-08-16 16:01:49,138] [INFO] Downloading base files...
+[2025-08-16 16:01:49,160] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:01:49,199] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/.gitmastery-exercise.json HTTP/1.1" 200 178
+[2025-08-16 16:01:49,201] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:01:49,624] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/README.md HTTP/1.1" 200 171
+[2025-08-16 16:01:49,628] [INFO] Exercise requires Git, checking if you have it setup
+[2025-08-16 16:01:49,637] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:01:49,660] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:01:49,777] [INFO] Git is installed
+[2025-08-16 16:01:49,802] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:01:49,922] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:01:49,931] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:01:50,016] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:01:50,017] [INFO] Git is installed and configured
+[2025-08-16 16:01:50,018] [INFO] Exercise requires Github, checking if you have it setup
+[2025-08-16 16:01:50,019] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:01:50,020] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:01:50,414] [INFO] Github CLI is installed
+[2025-08-16 16:01:50,421] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:01:51,100] [INFO] You have authenticated Github CLI
+[2025-08-16 16:01:51,107] [INFO] Github CLI is installed and configured
+[2025-08-16 16:01:51,109] [INFO] Retrieving exercise from Github
+[2025-08-16 16:01:51,123] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:01:51,678] [INFO] Checking if you already have a fork
+[2025-08-16 16:01:51,680] [INFO] Running command: ['gh', 'repo', 'view', 'xiaoqi01010-gitmastery-push-over', '--json', 'isFork', '--jq', '.isFork']
+[2025-08-16 16:01:52,706] [INFO] Env: {'GH_PAGER': 'cat'}
+[2025-08-16 16:01:52,708] [INFO] Creating fork of exercise repository
+[2025-08-16 16:01:52,711] [INFO] Running command: ['gh', 'repo', 'fork', 'git-mastery/push-over', '--default-branch-only', '--fork-name', 'xiaoqi01010-gitmastery-push-over']
+[2025-08-16 16:01:53,864] [INFO] Creating clone of your fork
+[2025-08-16 16:01:53,865] [INFO] Running command: ['gh', 'repo', 'clone', 'xiaoqi01010/xiaoqi01010-gitmastery-push-over', 'push-this']
+[2025-08-16 16:01:57,152] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:01:57,466] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/download.py HTTP/1.1" 200 None
+[2025-08-16 16:01:57,469] [INFO] Executing download setup
+[2025-08-16 16:01:57,475] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:01:57,508] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/download.py HTTP/1.1" 200 0
+[2025-08-16 16:01:57,510] [INFO] Completed setting up push-over
+[2025-08-16 16:01:57,512] [INFO] Start working on it:
+[2025-08-16 16:01:57,514] [INFO] cd push-over/push-this
+[2025-08-16 16:03:28,958] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:03:28,960] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:03:29,571] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:03:29,576] [INFO] Starting verification of push-over
+[2025-08-16 16:03:29,591] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:03:29,615] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:03:29,973] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/verify.py HTTP/1.1" 200 527
+[2025-08-16 16:03:29,992] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\push-over\push-this, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:03:30,079] [INFO] Verification completed.
+[2025-08-16 16:03:30,081] [INFO] 
+[2025-08-16 16:03:30,084] [INFO] Status: Incomplete
+[2025-08-16 16:03:30,087] [INFO] Comments:
+[2025-08-16 16:03:30,089] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:03:30,703] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
