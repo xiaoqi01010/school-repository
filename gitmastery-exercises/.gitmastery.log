@@ -83,3 +83,926 @@
 [2025-08-16 16:03:30,087] [INFO] Comments:
 [2025-08-16 16:03:30,089] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
 [2025-08-16 16:03:30,703] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:06:10,741] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'download', 'push-over']
+[2025-08-16 16:06:10,743] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:06:11,154] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1452
+[2025-08-16 16:06:11,161] [INFO] Checking if push-over is available
+[2025-08-16 16:06:11,175] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:06:11,206] [DEBUG] https://raw.githubusercontent.com:443 "HEAD /git-mastery/exercises/refs/heads/main/push_over/.gitmastery-exercise.json HTTP/1.1" 200 0
+[2025-08-16 16:06:11,208] [INFO] Downloading push-over to push-over/
+[2025-08-16 16:06:11,213] [INFO] Downloading base files...
+[2025-08-16 16:06:11,220] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:06:11,246] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/.gitmastery-exercise.json HTTP/1.1" 200 178
+[2025-08-16 16:06:11,249] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:06:11,278] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/README.md HTTP/1.1" 200 171
+[2025-08-16 16:06:11,281] [INFO] Exercise requires Git, checking if you have it setup
+[2025-08-16 16:06:11,284] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:06:11,287] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:06:11,354] [INFO] Git is installed
+[2025-08-16 16:06:11,355] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:06:11,417] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:06:11,419] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:06:11,480] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:06:11,482] [INFO] Git is installed and configured
+[2025-08-16 16:06:11,484] [INFO] Exercise requires Github, checking if you have it setup
+[2025-08-16 16:06:11,486] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:06:11,488] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:06:11,636] [INFO] Github CLI is installed
+[2025-08-16 16:06:11,638] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:06:12,400] [INFO] You have authenticated Github CLI
+[2025-08-16 16:06:12,405] [INFO] Github CLI is installed and configured
+[2025-08-16 16:06:12,412] [INFO] Retrieving exercise from Github
+[2025-08-16 16:06:12,414] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:06:13,115] [INFO] Checking if you already have a fork
+[2025-08-16 16:06:13,117] [INFO] Running command: ['gh', 'repo', 'view', 'xiaoqi01010-gitmastery-push-over', '--json', 'isFork', '--jq', '.isFork']
+[2025-08-16 16:06:14,449] [INFO] Env: {'GH_PAGER': 'cat'}
+[2025-08-16 16:06:14,453] [INFO] You already have a fork, deleting it
+[2025-08-16 16:06:14,462] [INFO] Running command: ['gh', 'repo', 'delete', 'xiaoqi01010-gitmastery-push-over', '--yes']
+[2025-08-16 16:06:15,478] [INFO] Creating fork of exercise repository
+[2025-08-16 16:06:15,481] [INFO] Running command: ['gh', 'repo', 'fork', 'git-mastery/push-over', '--default-branch-only', '--fork-name', 'xiaoqi01010-gitmastery-push-over']
+[2025-08-16 16:06:16,312] [INFO] Creating clone of your fork
+[2025-08-16 16:06:16,315] [INFO] Running command: ['gh', 'repo', 'clone', 'xiaoqi01010/xiaoqi01010-gitmastery-push-over', 'push-this']
+[2025-08-16 16:06:19,481] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:06:19,514] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/download.py HTTP/1.1" 200 0
+[2025-08-16 16:06:19,518] [INFO] Executing download setup
+[2025-08-16 16:06:19,522] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:06:19,570] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/download.py HTTP/1.1" 200 None
+[2025-08-16 16:06:19,572] [INFO] Completed setting up push-over
+[2025-08-16 16:06:19,575] [INFO] Start working on it:
+[2025-08-16 16:06:19,578] [INFO] cd push-over/push-this
+[2025-08-16 16:10:56,308] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:10:56,314] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:10:56,782] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1452
+[2025-08-16 16:10:56,787] [INFO] Starting verification of push-over
+[2025-08-16 16:10:56,802] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:10:56,809] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:10:57,255] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/push_over/verify.py HTTP/1.1" 200 527
+[2025-08-16 16:10:57,264] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\push-over\push-this, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:10:57,361] [DEBUG] Popen(['git', 'fetch', '-v', '--', 'origin'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\push-over\push-this, stdin=None, shell=False, universal_newlines=True)
+[2025-08-16 16:10:58,317] [DEBUG] Popen(['git', 'rev-list', 'origin/main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\push-over\push-this, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:10:58,396] [INFO] Verification completed.
+[2025-08-16 16:10:58,398] [INFO] 
+[2025-08-16 16:10:58,400] [INFO] Status: Completed
+[2025-08-16 16:10:58,402] [INFO] Comments:
+[2025-08-16 16:10:58,404] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:10:59,123] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:11:56,888] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'download', 'ignoring-somethings']
+[2025-08-16 16:11:56,890] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:11:57,364] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:11:57,370] [INFO] Checking if ignoring-somethings is available
+[2025-08-16 16:11:57,383] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:57,878] [DEBUG] https://raw.githubusercontent.com:443 "HEAD /git-mastery/exercises/refs/heads/main/ignoring_somethings/.gitmastery-exercise.json HTTP/1.1" 200 0
+[2025-08-16 16:11:57,881] [INFO] Downloading ignoring-somethings to ignoring-somethings/
+[2025-08-16 16:11:57,886] [INFO] Downloading base files...
+[2025-08-16 16:11:57,891] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:57,933] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/.gitmastery-exercise.json HTTP/1.1" 200 176
+[2025-08-16 16:11:57,936] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:58,285] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/README.md HTTP/1.1" 200 382
+[2025-08-16 16:11:58,291] [INFO] Exercise requires Git, checking if you have it setup
+[2025-08-16 16:11:58,298] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:11:58,304] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:11:58,381] [INFO] Git is installed
+[2025-08-16 16:11:58,384] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:11:58,453] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:11:58,455] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:11:58,509] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:11:58,512] [INFO] Git is installed and configured
+[2025-08-16 16:11:58,515] [INFO] Creating custom exercise folder
+[2025-08-16 16:11:58,519] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:58,899] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:11:58,902] [INFO] Downloading resources for the exercise...
+[2025-08-16 16:11:58,907] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:59,311] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/res/.gitignore HTTP/1.1" 200 47
+[2025-08-16 16:11:59,315] [INFO] Running command: ['git', 'init', '--initial-branch=main']
+[2025-08-16 16:11:59,449] [INFO] Running command: ['git', 'add', '.']
+[2025-08-16 16:11:59,522] [INFO] Running command: ['git', 'commit', '-m', 'Set initial state']
+[2025-08-16 16:11:59,647] [INFO] Executing download setup
+[2025-08-16 16:11:59,649] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:11:59,675] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:11:59,872] [INFO] Completed setting up ignoring-somethings
+[2025-08-16 16:11:59,900] [INFO] Start working on it:
+[2025-08-16 16:11:59,903] [INFO] cd ignoring-somethings/files
+[2025-08-16 16:18:57,600] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:18:57,604] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:18:58,002] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:18:58,005] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:18:58,019] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:18:58,021] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:18:58,029] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:18:58,035] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:18:58,053] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:18:58,433] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:18:58,437] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:18:58,533] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:18:58,596] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:18:58,672] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:18:58,742] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:18:58,805] [INFO] Verification completed.
+[2025-08-16 16:18:58,807] [INFO] 
+[2025-08-16 16:18:58,809] [INFO] Status: Incomplete
+[2025-08-16 16:18:58,811] [INFO] Comments:
+[2025-08-16 16:18:58,814] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:18:59,578] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:19:39,945] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:19:39,949] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:19:40,314] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:19:40,317] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:19:40,330] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:19:40,333] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:19:40,338] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:19:40,343] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:19:40,348] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:19:40,371] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:19:40,375] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:19:40,449] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:19:40,512] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:19:40,582] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:19:40,654] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:19:40,722] [INFO] Verification completed.
+[2025-08-16 16:19:40,724] [INFO] 
+[2025-08-16 16:19:40,726] [INFO] Status: Incomplete
+[2025-08-16 16:19:40,728] [INFO] Comments:
+[2025-08-16 16:19:40,730] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:19:41,359] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:22:14,959] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'reset']
+[2025-08-16 16:22:14,963] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:22:15,346] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:22:15,349] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:22:15,365] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:22:15,368] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:22:15,371] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:22:16,086] [ERROR] Use cd .. to move to the root of the ignoring-somethings exercise folder.
+[2025-08-16 16:22:31,677] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'reset']
+[2025-08-16 16:22:31,681] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:22:31,718] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:22:31,720] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:22:31,729] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:22:31,732] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:22:31,735] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:22:32,368] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:22:32,372] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:22:32,448] [INFO] Git is installed
+[2025-08-16 16:22:32,450] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:22:32,516] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:22:32,519] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:22:32,582] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:22:32,585] [INFO] Git is installed and configured
+[2025-08-16 16:22:32,587] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:22:32,589] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:22:32,758] [INFO] Github CLI is installed
+[2025-08-16 16:22:32,760] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:22:33,394] [INFO] You have authenticated Github CLI
+[2025-08-16 16:22:33,403] [INFO] Github CLI is installed and configured
+[2025-08-16 16:22:33,406] [INFO] Resetting the exercise folder
+[2025-08-16 16:22:33,677] [INFO] Creating custom exercise folder
+[2025-08-16 16:22:33,683] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:22:34,084] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:22:34,090] [INFO] Downloading resources for the exercise...
+[2025-08-16 16:22:34,097] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:22:34,498] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/res/.gitignore HTTP/1.1" 200 47
+[2025-08-16 16:22:34,502] [INFO] Running command: ['git', 'init', '--initial-branch=main']
+[2025-08-16 16:22:34,621] [INFO] Running command: ['git', 'add', '.']
+[2025-08-16 16:22:34,694] [INFO] Running command: ['git', 'commit', '-m', 'Set initial state']
+[2025-08-16 16:22:34,816] [INFO] Executing download setup
+[2025-08-16 16:22:34,819] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:22:34,849] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:22:35,107] [INFO] Completed setting up ignoring-somethings
+[2025-08-16 16:22:35,110] [INFO] Start working on it:
+[2025-08-16 16:22:35,114] [INFO] cd files
+[2025-08-16 16:22:35,116] [WARNING] Progress directory is missing. Set it up again using gitmastery progress setup
+[2025-08-16 16:24:55,628] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:24:55,630] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:24:56,011] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:24:56,013] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:24:56,027] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:24:56,028] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:24:56,037] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:24:56,043] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:24:56,049] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:24:56,530] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:24:56,534] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:24:56,648] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:24:56,708] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:24:56,776] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:24:56,839] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:24:56,888] [INFO] Verification completed.
+[2025-08-16 16:24:56,889] [INFO] 
+[2025-08-16 16:24:56,891] [INFO] Status: Incomplete
+[2025-08-16 16:24:56,894] [INFO] Comments:
+[2025-08-16 16:24:56,896] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:24:57,402] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:27:20,526] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'reset']
+[2025-08-16 16:27:20,528] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:27:20,908] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:27:20,912] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:27:20,935] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:27:20,940] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:27:20,944] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:27:21,608] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:27:21,611] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:27:21,693] [INFO] Git is installed
+[2025-08-16 16:27:21,696] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:27:21,771] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:27:21,775] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:27:21,846] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:27:21,850] [INFO] Git is installed and configured
+[2025-08-16 16:27:21,853] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:27:21,855] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:27:22,021] [INFO] Github CLI is installed
+[2025-08-16 16:27:22,023] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:27:22,638] [INFO] You have authenticated Github CLI
+[2025-08-16 16:27:22,640] [INFO] Github CLI is installed and configured
+[2025-08-16 16:27:22,643] [INFO] Resetting the exercise folder
+[2025-08-16 16:27:22,938] [INFO] Creating custom exercise folder
+[2025-08-16 16:27:22,942] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:27:22,970] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:27:22,973] [INFO] Downloading resources for the exercise...
+[2025-08-16 16:27:22,977] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:27:23,017] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/res/.gitignore HTTP/1.1" 200 47
+[2025-08-16 16:27:23,020] [INFO] Running command: ['git', 'init', '--initial-branch=main']
+[2025-08-16 16:27:23,169] [INFO] Running command: ['git', 'add', '.']
+[2025-08-16 16:27:23,251] [INFO] Running command: ['git', 'commit', '-m', 'Set initial state']
+[2025-08-16 16:27:23,396] [INFO] Executing download setup
+[2025-08-16 16:27:23,400] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:27:23,426] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:27:23,693] [INFO] Completed setting up ignoring-somethings
+[2025-08-16 16:27:23,696] [INFO] Start working on it:
+[2025-08-16 16:27:23,701] [INFO] cd files
+[2025-08-16 16:27:23,703] [WARNING] Progress directory is missing. Set it up again using gitmastery progress setup
+[2025-08-16 16:27:49,960] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'setup']
+[2025-08-16 16:27:49,962] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:27:50,293] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:27:50,297] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:27:50,315] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:27:50,321] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:30:18,960] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:30:18,962] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:30:19,388] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:30:19,392] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:30:19,407] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:30:19,411] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:30:19,415] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:30:19,419] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:30:19,427] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:30:19,800] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:30:19,808] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:30:19,951] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:30:20,023] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:30:20,101] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:30:20,178] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:30:20,252] [INFO] Verification completed.
+[2025-08-16 16:30:20,254] [INFO] 
+[2025-08-16 16:30:20,257] [INFO] Status: Incomplete
+[2025-08-16 16:30:20,260] [INFO] Comments:
+[2025-08-16 16:30:20,262] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:30:20,945] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:31:32,773] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'reset']
+[2025-08-16 16:31:32,777] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:31:33,116] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:31:33,120] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:31:33,145] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:31:33,148] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:31:33,156] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:31:33,859] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:31:33,863] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:31:33,956] [INFO] Git is installed
+[2025-08-16 16:31:33,958] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:31:34,037] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:31:34,039] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:31:34,113] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:31:34,116] [INFO] Git is installed and configured
+[2025-08-16 16:31:34,118] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:31:34,120] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:31:34,313] [INFO] Github CLI is installed
+[2025-08-16 16:31:34,316] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:31:34,976] [INFO] You have authenticated Github CLI
+[2025-08-16 16:31:34,978] [INFO] Github CLI is installed and configured
+[2025-08-16 16:31:35,007] [INFO] Resetting the exercise folder
+[2025-08-16 16:31:35,098] [INFO] Creating custom exercise folder
+[2025-08-16 16:31:35,105] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:31:35,578] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:31:35,582] [INFO] Downloading resources for the exercise...
+[2025-08-16 16:31:35,589] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:31:36,086] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/res/.gitignore HTTP/1.1" 200 47
+[2025-08-16 16:31:36,091] [INFO] Running command: ['git', 'init', '--initial-branch=main']
+[2025-08-16 16:31:36,234] [INFO] Running command: ['git', 'add', '.']
+[2025-08-16 16:31:36,322] [INFO] Running command: ['git', 'commit', '-m', 'Set initial state']
+[2025-08-16 16:31:36,457] [INFO] Executing download setup
+[2025-08-16 16:31:36,461] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:31:36,499] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/download.py HTTP/1.1" 200 759
+[2025-08-16 16:31:36,807] [INFO] Completed setting up ignoring-somethings
+[2025-08-16 16:31:36,809] [INFO] Start working on it:
+[2025-08-16 16:31:36,812] [INFO] cd files
+[2025-08-16 16:31:36,815] [WARNING] Progress directory is missing. Set it up again using gitmastery progress setup
+[2025-08-16 16:32:21,892] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:32:21,898] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:32:22,269] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:32:22,272] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:32:22,290] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:32:22,293] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:32:22,298] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:32:22,309] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:32:22,315] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:32:22,351] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:32:22,355] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:32:22,455] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:32:22,524] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:32:22,603] [INFO] Verification completed.
+[2025-08-16 16:32:22,605] [INFO] 
+[2025-08-16 16:32:22,607] [INFO] Status: Incomplete
+[2025-08-16 16:32:22,609] [INFO] Comments:
+[2025-08-16 16:32:22,612] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:32:23,313] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:33:02,186] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:33:02,188] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:33:02,612] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:33:02,617] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:33:02,627] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:33:02,629] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:33:02,634] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:33:02,642] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:33:02,646] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:33:02,671] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:33:02,675] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:02,766] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:33:02,862] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:02,964] [INFO] Verification completed.
+[2025-08-16 16:33:02,970] [INFO] 
+[2025-08-16 16:33:02,972] [INFO] Status: Incomplete
+[2025-08-16 16:33:02,976] [INFO] Comments:
+[2025-08-16 16:33:02,979] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:33:03,668] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:33:22,890] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:33:22,892] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:33:23,351] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:33:23,354] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:33:23,369] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:33:23,374] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:33:23,378] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:33:23,386] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:33:23,392] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:33:23,426] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:33:23,430] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:23,521] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:33:23,590] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:23,674] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:23,750] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:33:23,906] [DEBUG] Popen(['git', 'init'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,056] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:33:24,061] [DEBUG] Popen(['git', 'check-ignore', 'why_am_i_hidden.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,139] [DEBUG] Popen(['git', 'check-ignore', 'ignore_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,222] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/find_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,303] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/runaway.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,386] [DEBUG] Popen(['git', 'check-ignore', 'many/file1.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,468] [DEBUG] Popen(['git', 'check-ignore', 'many/file2.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,557] [DEBUG] Popen(['git', 'check-ignore', 'many/file3.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,636] [DEBUG] Popen(['git', 'check-ignore', 'many/file4.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,712] [DEBUG] Popen(['git', 'check-ignore', 'many/file5.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,798] [DEBUG] Popen(['git', 'check-ignore', 'many/file6.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,881] [DEBUG] Popen(['git', 'check-ignore', 'many/file7.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:24,974] [DEBUG] Popen(['git', 'check-ignore', 'many/file8.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,068] [DEBUG] Popen(['git', 'check-ignore', 'many/file9.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,150] [DEBUG] Popen(['git', 'check-ignore', 'many/file10.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,230] [DEBUG] Popen(['git', 'check-ignore', 'many/file11.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,311] [DEBUG] Popen(['git', 'check-ignore', 'many/file12.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,394] [DEBUG] Popen(['git', 'check-ignore', 'many/file13.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,479] [DEBUG] Popen(['git', 'check-ignore', 'many/file14.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,572] [DEBUG] Popen(['git', 'check-ignore', 'many/file15.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,664] [DEBUG] Popen(['git', 'check-ignore', 'many/file16.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,750] [DEBUG] Popen(['git', 'check-ignore', 'many/file17.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,832] [DEBUG] Popen(['git', 'check-ignore', 'many/file18.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:25,922] [DEBUG] Popen(['git', 'check-ignore', 'many/file19.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,002] [DEBUG] Popen(['git', 'check-ignore', 'many/file20.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,085] [DEBUG] Popen(['git', 'check-ignore', 'many/file21.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,170] [DEBUG] Popen(['git', 'check-ignore', 'many/file22.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,257] [DEBUG] Popen(['git', 'check-ignore', 'many/file23.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,331] [DEBUG] Popen(['git', 'check-ignore', 'many/file24.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,408] [DEBUG] Popen(['git', 'check-ignore', 'many/file25.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,491] [DEBUG] Popen(['git', 'check-ignore', 'many/file26.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,570] [DEBUG] Popen(['git', 'check-ignore', 'many/file27.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,650] [DEBUG] Popen(['git', 'check-ignore', 'many/file28.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,729] [DEBUG] Popen(['git', 'check-ignore', 'many/file29.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,816] [DEBUG] Popen(['git', 'check-ignore', 'many/file30.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,908] [DEBUG] Popen(['git', 'check-ignore', 'many/file31.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:26,987] [DEBUG] Popen(['git', 'check-ignore', 'many/file32.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,072] [DEBUG] Popen(['git', 'check-ignore', 'many/file33.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,151] [DEBUG] Popen(['git', 'check-ignore', 'many/file34.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,231] [DEBUG] Popen(['git', 'check-ignore', 'many/file35.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,308] [DEBUG] Popen(['git', 'check-ignore', 'many/file36.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,393] [DEBUG] Popen(['git', 'check-ignore', 'many/file37.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,484] [DEBUG] Popen(['git', 'check-ignore', 'many/file38.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,577] [DEBUG] Popen(['git', 'check-ignore', 'many/file39.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,676] [DEBUG] Popen(['git', 'check-ignore', 'many/file40.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,772] [DEBUG] Popen(['git', 'check-ignore', 'many/file41.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,872] [DEBUG] Popen(['git', 'check-ignore', 'many/file42.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:27,972] [DEBUG] Popen(['git', 'check-ignore', 'many/file43.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,063] [DEBUG] Popen(['git', 'check-ignore', 'many/file44.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,151] [DEBUG] Popen(['git', 'check-ignore', 'many/file45.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,238] [DEBUG] Popen(['git', 'check-ignore', 'many/file46.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,326] [DEBUG] Popen(['git', 'check-ignore', 'many/file47.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,419] [DEBUG] Popen(['git', 'check-ignore', 'many/file48.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,514] [DEBUG] Popen(['git', 'check-ignore', 'many/file49.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,603] [DEBUG] Popen(['git', 'check-ignore', 'many/file50.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,682] [DEBUG] Popen(['git', 'check-ignore', 'many/file51.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,756] [DEBUG] Popen(['git', 'check-ignore', 'many/file52.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,831] [DEBUG] Popen(['git', 'check-ignore', 'many/file53.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,913] [DEBUG] Popen(['git', 'check-ignore', 'many/file54.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:28,988] [DEBUG] Popen(['git', 'check-ignore', 'many/file55.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,070] [DEBUG] Popen(['git', 'check-ignore', 'many/file56.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,148] [DEBUG] Popen(['git', 'check-ignore', 'many/file57.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,225] [DEBUG] Popen(['git', 'check-ignore', 'many/file58.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,309] [DEBUG] Popen(['git', 'check-ignore', 'many/file59.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,387] [DEBUG] Popen(['git', 'check-ignore', 'many/file60.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,469] [DEBUG] Popen(['git', 'check-ignore', 'many/file61.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,553] [DEBUG] Popen(['git', 'check-ignore', 'many/file62.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,639] [DEBUG] Popen(['git', 'check-ignore', 'many/file63.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,730] [DEBUG] Popen(['git', 'check-ignore', 'many/file64.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,820] [DEBUG] Popen(['git', 'check-ignore', 'many/file65.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,905] [DEBUG] Popen(['git', 'check-ignore', 'many/file66.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:29,999] [DEBUG] Popen(['git', 'check-ignore', 'many/file67.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,088] [DEBUG] Popen(['git', 'check-ignore', 'many/file68.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,170] [DEBUG] Popen(['git', 'check-ignore', 'many/file69.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,250] [DEBUG] Popen(['git', 'check-ignore', 'many/file70.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,336] [DEBUG] Popen(['git', 'check-ignore', 'many/file71.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,425] [DEBUG] Popen(['git', 'check-ignore', 'many/file72.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,513] [DEBUG] Popen(['git', 'check-ignore', 'many/file73.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,604] [DEBUG] Popen(['git', 'check-ignore', 'many/file74.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,702] [DEBUG] Popen(['git', 'check-ignore', 'many/file75.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,802] [DEBUG] Popen(['git', 'check-ignore', 'many/file76.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,895] [DEBUG] Popen(['git', 'check-ignore', 'many/file77.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:30,990] [DEBUG] Popen(['git', 'check-ignore', 'many/file78.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,074] [DEBUG] Popen(['git', 'check-ignore', 'many/file79.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,154] [DEBUG] Popen(['git', 'check-ignore', 'many/file80.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,242] [DEBUG] Popen(['git', 'check-ignore', 'many/file81.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,329] [DEBUG] Popen(['git', 'check-ignore', 'many/file82.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,412] [DEBUG] Popen(['git', 'check-ignore', 'many/file83.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,495] [DEBUG] Popen(['git', 'check-ignore', 'many/file84.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,575] [DEBUG] Popen(['git', 'check-ignore', 'many/file85.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,654] [DEBUG] Popen(['git', 'check-ignore', 'many/file86.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,732] [DEBUG] Popen(['git', 'check-ignore', 'many/file87.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,810] [DEBUG] Popen(['git', 'check-ignore', 'many/file88.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,897] [DEBUG] Popen(['git', 'check-ignore', 'many/file89.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:31,977] [DEBUG] Popen(['git', 'check-ignore', 'many/file90.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,060] [DEBUG] Popen(['git', 'check-ignore', 'many/file91.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,136] [DEBUG] Popen(['git', 'check-ignore', 'many/file92.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,216] [DEBUG] Popen(['git', 'check-ignore', 'many/file93.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,294] [DEBUG] Popen(['git', 'check-ignore', 'many/file94.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,384] [DEBUG] Popen(['git', 'check-ignore', 'many/file95.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,462] [DEBUG] Popen(['git', 'check-ignore', 'many/file96.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,560] [DEBUG] Popen(['git', 'check-ignore', 'many/file97.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,667] [DEBUG] Popen(['git', 'check-ignore', 'many/file98.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,748] [DEBUG] Popen(['git', 'check-ignore', 'many/file99.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:32,827] [DEBUG] Popen(['git', 'check-ignore', 'many/file100.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpjcyf2qf_, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:33:33,027] [INFO] Verification completed.
+[2025-08-16 16:33:33,030] [INFO] 
+[2025-08-16 16:33:33,033] [INFO] Status: Incomplete
+[2025-08-16 16:33:33,036] [INFO] Comments:
+[2025-08-16 16:33:33,039] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:33:33,765] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:34:32,794] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:34:32,797] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:34:33,166] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:34:33,168] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:34:33,185] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:34:33,189] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:34:33,199] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:34:33,207] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:34:33,212] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:34:33,244] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:34:33,248] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,348] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,425] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,544] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,628] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,798] [DEBUG] Popen(['git', 'init'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,913] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:34:33,918] [DEBUG] Popen(['git', 'check-ignore', 'why_am_i_hidden.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:33,997] [DEBUG] Popen(['git', 'check-ignore', 'ignore_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,091] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/find_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,170] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/runaway.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,311] [DEBUG] Popen(['git', 'check-ignore', 'many/file1.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,392] [DEBUG] Popen(['git', 'check-ignore', 'many/file2.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,482] [DEBUG] Popen(['git', 'check-ignore', 'many/file3.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,567] [DEBUG] Popen(['git', 'check-ignore', 'many/file4.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,658] [DEBUG] Popen(['git', 'check-ignore', 'many/file5.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,742] [DEBUG] Popen(['git', 'check-ignore', 'many/file6.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,821] [DEBUG] Popen(['git', 'check-ignore', 'many/file7.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:34,907] [DEBUG] Popen(['git', 'check-ignore', 'many/file8.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,038] [DEBUG] Popen(['git', 'check-ignore', 'many/file9.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,115] [DEBUG] Popen(['git', 'check-ignore', 'many/file10.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,176] [DEBUG] Popen(['git', 'check-ignore', 'many/file11.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,237] [DEBUG] Popen(['git', 'check-ignore', 'many/file12.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,307] [DEBUG] Popen(['git', 'check-ignore', 'many/file13.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,369] [DEBUG] Popen(['git', 'check-ignore', 'many/file14.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,431] [DEBUG] Popen(['git', 'check-ignore', 'many/file15.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,489] [DEBUG] Popen(['git', 'check-ignore', 'many/file16.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,550] [DEBUG] Popen(['git', 'check-ignore', 'many/file17.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,609] [DEBUG] Popen(['git', 'check-ignore', 'many/file18.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,670] [DEBUG] Popen(['git', 'check-ignore', 'many/file19.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,729] [DEBUG] Popen(['git', 'check-ignore', 'many/file20.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,790] [DEBUG] Popen(['git', 'check-ignore', 'many/file21.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,880] [DEBUG] Popen(['git', 'check-ignore', 'many/file22.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:35,954] [DEBUG] Popen(['git', 'check-ignore', 'many/file23.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,025] [DEBUG] Popen(['git', 'check-ignore', 'many/file24.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,095] [DEBUG] Popen(['git', 'check-ignore', 'many/file25.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,158] [DEBUG] Popen(['git', 'check-ignore', 'many/file26.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,221] [DEBUG] Popen(['git', 'check-ignore', 'many/file27.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,284] [DEBUG] Popen(['git', 'check-ignore', 'many/file28.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,345] [DEBUG] Popen(['git', 'check-ignore', 'many/file29.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,415] [DEBUG] Popen(['git', 'check-ignore', 'many/file30.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,477] [DEBUG] Popen(['git', 'check-ignore', 'many/file31.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,537] [DEBUG] Popen(['git', 'check-ignore', 'many/file32.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,601] [DEBUG] Popen(['git', 'check-ignore', 'many/file33.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,664] [DEBUG] Popen(['git', 'check-ignore', 'many/file34.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,724] [DEBUG] Popen(['git', 'check-ignore', 'many/file35.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,787] [DEBUG] Popen(['git', 'check-ignore', 'many/file36.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,845] [DEBUG] Popen(['git', 'check-ignore', 'many/file37.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,907] [DEBUG] Popen(['git', 'check-ignore', 'many/file38.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:36,976] [DEBUG] Popen(['git', 'check-ignore', 'many/file39.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,035] [DEBUG] Popen(['git', 'check-ignore', 'many/file40.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,097] [DEBUG] Popen(['git', 'check-ignore', 'many/file41.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,162] [DEBUG] Popen(['git', 'check-ignore', 'many/file42.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,224] [DEBUG] Popen(['git', 'check-ignore', 'many/file43.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,293] [DEBUG] Popen(['git', 'check-ignore', 'many/file44.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,351] [DEBUG] Popen(['git', 'check-ignore', 'many/file45.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,414] [DEBUG] Popen(['git', 'check-ignore', 'many/file46.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,479] [DEBUG] Popen(['git', 'check-ignore', 'many/file47.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,538] [DEBUG] Popen(['git', 'check-ignore', 'many/file48.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,596] [DEBUG] Popen(['git', 'check-ignore', 'many/file49.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,656] [DEBUG] Popen(['git', 'check-ignore', 'many/file50.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,719] [DEBUG] Popen(['git', 'check-ignore', 'many/file51.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,782] [DEBUG] Popen(['git', 'check-ignore', 'many/file52.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,842] [DEBUG] Popen(['git', 'check-ignore', 'many/file53.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,905] [DEBUG] Popen(['git', 'check-ignore', 'many/file54.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:37,969] [DEBUG] Popen(['git', 'check-ignore', 'many/file55.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,033] [DEBUG] Popen(['git', 'check-ignore', 'many/file56.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,094] [DEBUG] Popen(['git', 'check-ignore', 'many/file57.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,152] [DEBUG] Popen(['git', 'check-ignore', 'many/file58.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,208] [DEBUG] Popen(['git', 'check-ignore', 'many/file59.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,275] [DEBUG] Popen(['git', 'check-ignore', 'many/file60.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,339] [DEBUG] Popen(['git', 'check-ignore', 'many/file61.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,398] [DEBUG] Popen(['git', 'check-ignore', 'many/file62.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,456] [DEBUG] Popen(['git', 'check-ignore', 'many/file63.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,519] [DEBUG] Popen(['git', 'check-ignore', 'many/file64.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,582] [DEBUG] Popen(['git', 'check-ignore', 'many/file65.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,647] [DEBUG] Popen(['git', 'check-ignore', 'many/file66.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,708] [DEBUG] Popen(['git', 'check-ignore', 'many/file67.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,765] [DEBUG] Popen(['git', 'check-ignore', 'many/file68.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,829] [DEBUG] Popen(['git', 'check-ignore', 'many/file69.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,884] [DEBUG] Popen(['git', 'check-ignore', 'many/file70.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:38,950] [DEBUG] Popen(['git', 'check-ignore', 'many/file71.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,032] [DEBUG] Popen(['git', 'check-ignore', 'many/file72.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,089] [DEBUG] Popen(['git', 'check-ignore', 'many/file73.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,149] [DEBUG] Popen(['git', 'check-ignore', 'many/file74.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,214] [DEBUG] Popen(['git', 'check-ignore', 'many/file75.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,275] [DEBUG] Popen(['git', 'check-ignore', 'many/file76.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,334] [DEBUG] Popen(['git', 'check-ignore', 'many/file77.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,400] [DEBUG] Popen(['git', 'check-ignore', 'many/file78.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,458] [DEBUG] Popen(['git', 'check-ignore', 'many/file79.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,521] [DEBUG] Popen(['git', 'check-ignore', 'many/file80.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,581] [DEBUG] Popen(['git', 'check-ignore', 'many/file81.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,644] [DEBUG] Popen(['git', 'check-ignore', 'many/file82.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,705] [DEBUG] Popen(['git', 'check-ignore', 'many/file83.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,769] [DEBUG] Popen(['git', 'check-ignore', 'many/file84.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,833] [DEBUG] Popen(['git', 'check-ignore', 'many/file85.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,896] [DEBUG] Popen(['git', 'check-ignore', 'many/file86.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:39,960] [DEBUG] Popen(['git', 'check-ignore', 'many/file87.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,025] [DEBUG] Popen(['git', 'check-ignore', 'many/file88.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,089] [DEBUG] Popen(['git', 'check-ignore', 'many/file89.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,150] [DEBUG] Popen(['git', 'check-ignore', 'many/file90.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,208] [DEBUG] Popen(['git', 'check-ignore', 'many/file91.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,266] [DEBUG] Popen(['git', 'check-ignore', 'many/file92.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,331] [DEBUG] Popen(['git', 'check-ignore', 'many/file93.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,392] [DEBUG] Popen(['git', 'check-ignore', 'many/file94.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,453] [DEBUG] Popen(['git', 'check-ignore', 'many/file95.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,516] [DEBUG] Popen(['git', 'check-ignore', 'many/file96.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,583] [DEBUG] Popen(['git', 'check-ignore', 'many/file97.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,646] [DEBUG] Popen(['git', 'check-ignore', 'many/file98.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,711] [DEBUG] Popen(['git', 'check-ignore', 'many/file99.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,770] [DEBUG] Popen(['git', 'check-ignore', 'many/file100.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpoxbbkp3r, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:34:40,930] [INFO] Verification completed.
+[2025-08-16 16:34:40,932] [INFO] 
+[2025-08-16 16:34:40,935] [INFO] Status: Incomplete
+[2025-08-16 16:34:40,940] [INFO] Comments:
+[2025-08-16 16:34:40,945] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:34:41,538] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:35:22,960] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:35:22,962] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:35:23,310] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:35:23,314] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:35:23,337] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:35:23,339] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:35:23,347] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:35:23,351] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:35:23,356] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:35:23,821] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:35:23,827] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:23,930] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,007] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,092] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,173] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,338] [DEBUG] Popen(['git', 'init'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,472] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:35:24,476] [DEBUG] Popen(['git', 'check-ignore', 'why_am_i_hidden.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,555] [DEBUG] Popen(['git', 'check-ignore', 'ignore_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,634] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/find_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,733] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/runaway.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,828] [DEBUG] Popen(['git', 'check-ignore', 'many/file1.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,912] [DEBUG] Popen(['git', 'check-ignore', 'many/file2.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:24,999] [DEBUG] Popen(['git', 'check-ignore', 'many/file3.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,084] [DEBUG] Popen(['git', 'check-ignore', 'many/file4.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,168] [DEBUG] Popen(['git', 'check-ignore', 'many/file5.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,260] [DEBUG] Popen(['git', 'check-ignore', 'many/file6.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,344] [DEBUG] Popen(['git', 'check-ignore', 'many/file7.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,432] [DEBUG] Popen(['git', 'check-ignore', 'many/file8.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,527] [DEBUG] Popen(['git', 'check-ignore', 'many/file9.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,617] [DEBUG] Popen(['git', 'check-ignore', 'many/file10.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,710] [DEBUG] Popen(['git', 'check-ignore', 'many/file11.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,804] [DEBUG] Popen(['git', 'check-ignore', 'many/file12.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:25,913] [DEBUG] Popen(['git', 'check-ignore', 'many/file13.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,001] [DEBUG] Popen(['git', 'check-ignore', 'many/file14.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,085] [DEBUG] Popen(['git', 'check-ignore', 'many/file15.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,164] [DEBUG] Popen(['git', 'check-ignore', 'many/file16.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,251] [DEBUG] Popen(['git', 'check-ignore', 'many/file17.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,334] [DEBUG] Popen(['git', 'check-ignore', 'many/file18.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,411] [DEBUG] Popen(['git', 'check-ignore', 'many/file19.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,489] [DEBUG] Popen(['git', 'check-ignore', 'many/file20.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,570] [DEBUG] Popen(['git', 'check-ignore', 'many/file21.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,649] [DEBUG] Popen(['git', 'check-ignore', 'many/file22.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,729] [DEBUG] Popen(['git', 'check-ignore', 'many/file23.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,814] [DEBUG] Popen(['git', 'check-ignore', 'many/file24.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,902] [DEBUG] Popen(['git', 'check-ignore', 'many/file25.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:26,981] [DEBUG] Popen(['git', 'check-ignore', 'many/file26.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,063] [DEBUG] Popen(['git', 'check-ignore', 'many/file27.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,142] [DEBUG] Popen(['git', 'check-ignore', 'many/file28.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,228] [DEBUG] Popen(['git', 'check-ignore', 'many/file29.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,318] [DEBUG] Popen(['git', 'check-ignore', 'many/file30.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,402] [DEBUG] Popen(['git', 'check-ignore', 'many/file31.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,482] [DEBUG] Popen(['git', 'check-ignore', 'many/file32.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,563] [DEBUG] Popen(['git', 'check-ignore', 'many/file33.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,646] [DEBUG] Popen(['git', 'check-ignore', 'many/file34.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,736] [DEBUG] Popen(['git', 'check-ignore', 'many/file35.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,829] [DEBUG] Popen(['git', 'check-ignore', 'many/file36.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:27,931] [DEBUG] Popen(['git', 'check-ignore', 'many/file37.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,029] [DEBUG] Popen(['git', 'check-ignore', 'many/file38.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,111] [DEBUG] Popen(['git', 'check-ignore', 'many/file39.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,195] [DEBUG] Popen(['git', 'check-ignore', 'many/file40.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,289] [DEBUG] Popen(['git', 'check-ignore', 'many/file41.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,382] [DEBUG] Popen(['git', 'check-ignore', 'many/file42.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,475] [DEBUG] Popen(['git', 'check-ignore', 'many/file43.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,572] [DEBUG] Popen(['git', 'check-ignore', 'many/file44.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,654] [DEBUG] Popen(['git', 'check-ignore', 'many/file45.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,742] [DEBUG] Popen(['git', 'check-ignore', 'many/file46.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,842] [DEBUG] Popen(['git', 'check-ignore', 'many/file47.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:28,935] [DEBUG] Popen(['git', 'check-ignore', 'many/file48.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,020] [DEBUG] Popen(['git', 'check-ignore', 'many/file49.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,102] [DEBUG] Popen(['git', 'check-ignore', 'many/file50.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,180] [DEBUG] Popen(['git', 'check-ignore', 'many/file51.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,273] [DEBUG] Popen(['git', 'check-ignore', 'many/file52.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,368] [DEBUG] Popen(['git', 'check-ignore', 'many/file53.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,452] [DEBUG] Popen(['git', 'check-ignore', 'many/file54.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,534] [DEBUG] Popen(['git', 'check-ignore', 'many/file55.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,610] [DEBUG] Popen(['git', 'check-ignore', 'many/file56.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,689] [DEBUG] Popen(['git', 'check-ignore', 'many/file57.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,766] [DEBUG] Popen(['git', 'check-ignore', 'many/file58.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,840] [DEBUG] Popen(['git', 'check-ignore', 'many/file59.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:29,925] [DEBUG] Popen(['git', 'check-ignore', 'many/file60.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,006] [DEBUG] Popen(['git', 'check-ignore', 'many/file61.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,082] [DEBUG] Popen(['git', 'check-ignore', 'many/file62.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,163] [DEBUG] Popen(['git', 'check-ignore', 'many/file63.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,260] [DEBUG] Popen(['git', 'check-ignore', 'many/file64.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,336] [DEBUG] Popen(['git', 'check-ignore', 'many/file65.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,428] [DEBUG] Popen(['git', 'check-ignore', 'many/file66.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,512] [DEBUG] Popen(['git', 'check-ignore', 'many/file67.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,591] [DEBUG] Popen(['git', 'check-ignore', 'many/file68.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,690] [DEBUG] Popen(['git', 'check-ignore', 'many/file69.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,791] [DEBUG] Popen(['git', 'check-ignore', 'many/file70.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,884] [DEBUG] Popen(['git', 'check-ignore', 'many/file71.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:30,981] [DEBUG] Popen(['git', 'check-ignore', 'many/file72.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,071] [DEBUG] Popen(['git', 'check-ignore', 'many/file73.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,152] [DEBUG] Popen(['git', 'check-ignore', 'many/file74.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,242] [DEBUG] Popen(['git', 'check-ignore', 'many/file75.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,331] [DEBUG] Popen(['git', 'check-ignore', 'many/file76.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,422] [DEBUG] Popen(['git', 'check-ignore', 'many/file77.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,511] [DEBUG] Popen(['git', 'check-ignore', 'many/file78.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,595] [DEBUG] Popen(['git', 'check-ignore', 'many/file79.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,683] [DEBUG] Popen(['git', 'check-ignore', 'many/file80.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,782] [DEBUG] Popen(['git', 'check-ignore', 'many/file81.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,873] [DEBUG] Popen(['git', 'check-ignore', 'many/file82.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:31,957] [DEBUG] Popen(['git', 'check-ignore', 'many/file83.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,050] [DEBUG] Popen(['git', 'check-ignore', 'many/file84.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,134] [DEBUG] Popen(['git', 'check-ignore', 'many/file85.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,220] [DEBUG] Popen(['git', 'check-ignore', 'many/file86.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,300] [DEBUG] Popen(['git', 'check-ignore', 'many/file87.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,389] [DEBUG] Popen(['git', 'check-ignore', 'many/file88.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,472] [DEBUG] Popen(['git', 'check-ignore', 'many/file89.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,564] [DEBUG] Popen(['git', 'check-ignore', 'many/file90.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,659] [DEBUG] Popen(['git', 'check-ignore', 'many/file91.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,742] [DEBUG] Popen(['git', 'check-ignore', 'many/file92.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,829] [DEBUG] Popen(['git', 'check-ignore', 'many/file93.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,912] [DEBUG] Popen(['git', 'check-ignore', 'many/file94.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:32,999] [DEBUG] Popen(['git', 'check-ignore', 'many/file95.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,080] [DEBUG] Popen(['git', 'check-ignore', 'many/file96.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,164] [DEBUG] Popen(['git', 'check-ignore', 'many/file97.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,245] [DEBUG] Popen(['git', 'check-ignore', 'many/file98.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,333] [DEBUG] Popen(['git', 'check-ignore', 'many/file99.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,428] [DEBUG] Popen(['git', 'check-ignore', 'many/file100.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmphzkfb7_7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:35:33,623] [INFO] Verification completed.
+[2025-08-16 16:35:33,628] [INFO] 
+[2025-08-16 16:35:33,631] [INFO] Status: Incomplete
+[2025-08-16 16:35:33,636] [INFO] Comments:
+[2025-08-16 16:35:33,640] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:35:34,396] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:36:37,010] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:36:37,015] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:36:37,447] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:36:37,451] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:36:37,468] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:36:37,476] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:36:37,487] [INFO] Starting verification of ignoring-somethings
+[2025-08-16 16:36:37,493] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:36:37,497] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:36:37,534] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/ignoring_somethings/verify.py HTTP/1.1" 200 1151
+[2025-08-16 16:36:37,539] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:37,635] [DEBUG] Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:36:37,710] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:37,788] [DEBUG] Popen(['git', 'rev-list', 'main', '--'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:37,867] [DEBUG] Popen(['git', 'cat-file', '--batch'], cwd=C:\Users\yunju\gitmastery-home\gitmastery-exercises\ignoring-somethings\files, stdin=<valid stream>, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,035] [DEBUG] Popen(['git', 'init'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,159] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:36:38,164] [DEBUG] Popen(['git', 'check-ignore', 'why_am_i_hidden.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,243] [DEBUG] Popen(['git', 'check-ignore', 'ignore_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,329] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/find_me.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,427] [DEBUG] Popen(['git', 'check-ignore', 'this/is/very/nested/runaway.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,516] [DEBUG] Popen(['git', 'check-ignore', 'many/file1.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,607] [DEBUG] Popen(['git', 'check-ignore', 'many/file2.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,698] [DEBUG] Popen(['git', 'check-ignore', 'many/file3.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,781] [DEBUG] Popen(['git', 'check-ignore', 'many/file4.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,860] [DEBUG] Popen(['git', 'check-ignore', 'many/file5.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:38,958] [DEBUG] Popen(['git', 'check-ignore', 'many/file6.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,052] [DEBUG] Popen(['git', 'check-ignore', 'many/file7.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,133] [DEBUG] Popen(['git', 'check-ignore', 'many/file8.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,221] [DEBUG] Popen(['git', 'check-ignore', 'many/file9.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,314] [DEBUG] Popen(['git', 'check-ignore', 'many/file10.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,387] [DEBUG] Popen(['git', 'check-ignore', 'many/file11.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,466] [DEBUG] Popen(['git', 'check-ignore', 'many/file12.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,555] [DEBUG] Popen(['git', 'check-ignore', 'many/file13.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,650] [DEBUG] Popen(['git', 'check-ignore', 'many/file14.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,730] [DEBUG] Popen(['git', 'check-ignore', 'many/file15.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,819] [DEBUG] Popen(['git', 'check-ignore', 'many/file16.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:39,918] [DEBUG] Popen(['git', 'check-ignore', 'many/file17.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,011] [DEBUG] Popen(['git', 'check-ignore', 'many/file18.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,092] [DEBUG] Popen(['git', 'check-ignore', 'many/file19.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,175] [DEBUG] Popen(['git', 'check-ignore', 'many/file20.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,256] [DEBUG] Popen(['git', 'check-ignore', 'many/file21.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,337] [DEBUG] Popen(['git', 'check-ignore', 'many/file22.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,417] [DEBUG] Popen(['git', 'check-ignore', 'many/file23.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,507] [DEBUG] Popen(['git', 'check-ignore', 'many/file24.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,596] [DEBUG] Popen(['git', 'check-ignore', 'many/file25.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,680] [DEBUG] Popen(['git', 'check-ignore', 'many/file26.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,763] [DEBUG] Popen(['git', 'check-ignore', 'many/file27.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,844] [DEBUG] Popen(['git', 'check-ignore', 'many/file28.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:40,931] [DEBUG] Popen(['git', 'check-ignore', 'many/file29.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,017] [DEBUG] Popen(['git', 'check-ignore', 'many/file30.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,097] [DEBUG] Popen(['git', 'check-ignore', 'many/file31.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,179] [DEBUG] Popen(['git', 'check-ignore', 'many/file32.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,263] [DEBUG] Popen(['git', 'check-ignore', 'many/file33.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,354] [DEBUG] Popen(['git', 'check-ignore', 'many/file34.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,429] [DEBUG] Popen(['git', 'check-ignore', 'many/file35.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,509] [DEBUG] Popen(['git', 'check-ignore', 'many/file36.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,585] [DEBUG] Popen(['git', 'check-ignore', 'many/file37.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,669] [DEBUG] Popen(['git', 'check-ignore', 'many/file38.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,753] [DEBUG] Popen(['git', 'check-ignore', 'many/file39.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,839] [DEBUG] Popen(['git', 'check-ignore', 'many/file40.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,919] [DEBUG] Popen(['git', 'check-ignore', 'many/file41.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:41,999] [DEBUG] Popen(['git', 'check-ignore', 'many/file42.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,076] [DEBUG] Popen(['git', 'check-ignore', 'many/file43.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,156] [DEBUG] Popen(['git', 'check-ignore', 'many/file44.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,236] [DEBUG] Popen(['git', 'check-ignore', 'many/file45.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,317] [DEBUG] Popen(['git', 'check-ignore', 'many/file46.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,400] [DEBUG] Popen(['git', 'check-ignore', 'many/file47.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,476] [DEBUG] Popen(['git', 'check-ignore', 'many/file48.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,572] [DEBUG] Popen(['git', 'check-ignore', 'many/file49.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,666] [DEBUG] Popen(['git', 'check-ignore', 'many/file50.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,755] [DEBUG] Popen(['git', 'check-ignore', 'many/file51.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,841] [DEBUG] Popen(['git', 'check-ignore', 'many/file52.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:42,930] [DEBUG] Popen(['git', 'check-ignore', 'many/file53.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,018] [DEBUG] Popen(['git', 'check-ignore', 'many/file54.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,100] [DEBUG] Popen(['git', 'check-ignore', 'many/file55.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,191] [DEBUG] Popen(['git', 'check-ignore', 'many/file56.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,280] [DEBUG] Popen(['git', 'check-ignore', 'many/file57.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,363] [DEBUG] Popen(['git', 'check-ignore', 'many/file58.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,464] [DEBUG] Popen(['git', 'check-ignore', 'many/file59.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,560] [DEBUG] Popen(['git', 'check-ignore', 'many/file60.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,641] [DEBUG] Popen(['git', 'check-ignore', 'many/file61.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,724] [DEBUG] Popen(['git', 'check-ignore', 'many/file62.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,818] [DEBUG] Popen(['git', 'check-ignore', 'many/file63.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,908] [DEBUG] Popen(['git', 'check-ignore', 'many/file64.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:43,991] [DEBUG] Popen(['git', 'check-ignore', 'many/file65.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,080] [DEBUG] Popen(['git', 'check-ignore', 'many/file66.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,161] [DEBUG] Popen(['git', 'check-ignore', 'many/file67.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,240] [DEBUG] Popen(['git', 'check-ignore', 'many/file68.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,328] [DEBUG] Popen(['git', 'check-ignore', 'many/file69.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,416] [DEBUG] Popen(['git', 'check-ignore', 'many/file70.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,519] [DEBUG] Popen(['git', 'check-ignore', 'many/file71.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,611] [DEBUG] Popen(['git', 'check-ignore', 'many/file72.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,698] [DEBUG] Popen(['git', 'check-ignore', 'many/file73.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,786] [DEBUG] Popen(['git', 'check-ignore', 'many/file74.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,879] [DEBUG] Popen(['git', 'check-ignore', 'many/file75.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:44,975] [DEBUG] Popen(['git', 'check-ignore', 'many/file76.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,074] [DEBUG] Popen(['git', 'check-ignore', 'many/file77.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,158] [DEBUG] Popen(['git', 'check-ignore', 'many/file78.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,250] [DEBUG] Popen(['git', 'check-ignore', 'many/file79.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,345] [DEBUG] Popen(['git', 'check-ignore', 'many/file80.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,439] [DEBUG] Popen(['git', 'check-ignore', 'many/file81.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,544] [DEBUG] Popen(['git', 'check-ignore', 'many/file82.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,639] [DEBUG] Popen(['git', 'check-ignore', 'many/file83.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,732] [DEBUG] Popen(['git', 'check-ignore', 'many/file84.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,819] [DEBUG] Popen(['git', 'check-ignore', 'many/file85.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,901] [DEBUG] Popen(['git', 'check-ignore', 'many/file86.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:45,988] [DEBUG] Popen(['git', 'check-ignore', 'many/file87.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,076] [DEBUG] Popen(['git', 'check-ignore', 'many/file88.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,156] [DEBUG] Popen(['git', 'check-ignore', 'many/file89.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,242] [DEBUG] Popen(['git', 'check-ignore', 'many/file90.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,336] [DEBUG] Popen(['git', 'check-ignore', 'many/file91.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,429] [DEBUG] Popen(['git', 'check-ignore', 'many/file92.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,525] [DEBUG] Popen(['git', 'check-ignore', 'many/file93.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,612] [DEBUG] Popen(['git', 'check-ignore', 'many/file94.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,693] [DEBUG] Popen(['git', 'check-ignore', 'many/file95.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,784] [DEBUG] Popen(['git', 'check-ignore', 'many/file96.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,873] [DEBUG] Popen(['git', 'check-ignore', 'many/file97.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:46,957] [DEBUG] Popen(['git', 'check-ignore', 'many/file98.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:47,037] [DEBUG] Popen(['git', 'check-ignore', 'many/file99.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:47,118] [DEBUG] Popen(['git', 'check-ignore', 'many/file100.txt'], cwd=C:\Users\yunju\AppData\Local\Temp\tmpb_16t9u7, stdin=None, shell=False, universal_newlines=False)
+[2025-08-16 16:36:47,289] [INFO] Verification completed.
+[2025-08-16 16:36:47,292] [INFO] 
+[2025-08-16 16:36:47,295] [INFO] Status: Completed
+[2025-08-16 16:36:47,299] [INFO] Comments:
+[2025-08-16 16:36:47,303] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:36:48,009] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:51:15,963] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'download', 'clone-repo']
+[2025-08-16 16:51:15,968] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:51:16,283] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1428
+[2025-08-16 16:51:16,285] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:51:16,300] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:51:16,321] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:51:16,324] [INFO] Checking if clone-repo is available
+[2025-08-16 16:51:16,332] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:51:16,751] [DEBUG] https://raw.githubusercontent.com:443 "HEAD /git-mastery/exercises/refs/heads/main/clone_repo/.gitmastery-exercise.json HTTP/1.1" 200 0
+[2025-08-16 16:51:16,753] [INFO] Downloading clone-repo to clone-repo/
+[2025-08-16 16:51:16,759] [INFO] Downloading base files...
+[2025-08-16 16:51:16,762] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:51:16,799] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/clone_repo/.gitmastery-exercise.json HTTP/1.1" 200 176
+[2025-08-16 16:51:16,804] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:51:17,161] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/clone_repo/README.md HTTP/1.1" 200 256
+[2025-08-16 16:51:17,170] [INFO] Exercise requires Git, checking if you have it setup
+[2025-08-16 16:51:17,175] [INFO] Checking that you have Git installed and configured
+[2025-08-16 16:51:17,180] [INFO] Running command: ['git', '--version']
+[2025-08-16 16:51:17,267] [INFO] Git is installed
+[2025-08-16 16:51:17,270] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 16:51:17,346] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 16:51:17,350] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 16:51:17,423] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 16:51:17,431] [INFO] Git is installed and configured
+[2025-08-16 16:51:17,433] [INFO] Exercise requires Github, checking if you have it setup
+[2025-08-16 16:51:17,437] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 16:51:17,440] [INFO] Running command: ['gh', '--version']
+[2025-08-16 16:51:17,659] [INFO] Github CLI is installed
+[2025-08-16 16:51:17,662] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 16:51:18,415] [INFO] You have authenticated Github CLI
+[2025-08-16 16:51:18,420] [INFO] Github CLI is installed and configured
+[2025-08-16 16:51:18,422] [INFO] cd clone-repo
+[2025-08-16 16:55:56,554] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:55:56,557] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:55:56,905] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:55:56,909] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:55:56,925] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:55:56,928] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:55:56,932] [INFO] Starting verification of clone-repo
+[2025-08-16 16:55:56,940] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:55:57,326] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/clone_repo/verify.py HTTP/1.1" 200 1474
+[2025-08-16 16:55:59,346] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:55:59,375] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:55:59,380] [INFO] Verification completed.
+[2025-08-16 16:55:59,382] [INFO] 
+[2025-08-16 16:55:59,385] [INFO] Status: Incomplete
+[2025-08-16 16:55:59,392] [INFO] Comments:
+[2025-08-16 16:55:59,395] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:56:00,112] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
+[2025-08-16 16:59:01,447] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'verify']
+[2025-08-16 16:59:01,450] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 16:59:01,853] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 None
+[2025-08-16 16:59:01,857] [WARNING] Your version of Git-Mastery app v4.8.0 is behind the latest version v4.9.0.
+[2025-08-16 16:59:01,889] [WARNING] We strongly recommend upgrading your app.
+[2025-08-16 16:59:01,891] [WARNING] Follow the update guide here: https://git-mastery.github.io/app/update
+[2025-08-16 16:59:01,896] [INFO] Starting verification of clone-repo
+[2025-08-16 16:59:01,910] [DEBUG] Starting new HTTPS connection (1): raw.githubusercontent.com:443
+[2025-08-16 16:59:01,942] [DEBUG] https://raw.githubusercontent.com:443 "GET /git-mastery/exercises/refs/heads/main/clone_repo/verify.py HTTP/1.1" 200 1474
+[2025-08-16 16:59:04,221] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:59:04,242] [DEBUG] sys.platform='win32', git_executable='git'
+[2025-08-16 16:59:04,248] [INFO] Verification completed.
+[2025-08-16 16:59:04,251] [INFO] 
+[2025-08-16 16:59:04,254] [INFO] Status: Completed
+[2025-08-16 16:59:04,257] [INFO] Comments:
+[2025-08-16 16:59:04,261] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 16:59:04,950] [ERROR] Something strange has occurred, try to recreate the Git-Mastery exercise directory using gitmastery setup
