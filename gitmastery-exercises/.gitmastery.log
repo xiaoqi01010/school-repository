@@ -1,0 +1,26 @@
+[2025-08-12 18:42:29,579] [INFO] Setup complete. Your directory is: gitmastery-exercises
+[2025-08-16 13:59:57,735] [INFO] Running command gitmastery.exe with arguments ['C:\\Users\\yunju\\Downloads\\gitmastery.exe', 'progress', 'sync', 'on']
+[2025-08-16 13:59:57,737] [DEBUG] Starting new HTTPS connection (1): api.github.com:443
+[2025-08-16 13:59:58,081] [DEBUG] https://api.github.com:443 "GET /repos/git-mastery/app/tags HTTP/1.1" 200 1458
+[2025-08-16 13:59:58,097] [INFO] Checking that you have Git installed and configured
+[2025-08-16 13:59:58,112] [INFO] Running command: ['git', '--version']
+[2025-08-16 13:59:58,180] [INFO] Git is installed
+[2025-08-16 13:59:58,198] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.name']
+[2025-08-16 13:59:58,262] [INFO] You have set user.name as xiaoqi01010
+[2025-08-16 13:59:58,266] [INFO] Running command: ['git', 'config', '--global', '--get', 'user.email']
+[2025-08-16 13:59:58,331] [INFO] You have set user.email as 97711145+xiaoqi01010@users.noreply.github.com
+[2025-08-16 13:59:58,334] [INFO] Git is installed and configured
+[2025-08-16 13:59:58,336] [INFO] Checking that you have Github CLI is installed and configured
+[2025-08-16 13:59:58,338] [INFO] Running command: ['gh', '--version']
+[2025-08-16 13:59:58,514] [INFO] Github CLI is installed
+[2025-08-16 13:59:58,517] [INFO] Running command: ['gh', 'auth', 'status']
+[2025-08-16 13:59:59,131] [INFO] You have authenticated Github CLI
+[2025-08-16 13:59:59,141] [INFO] Github CLI is installed and configured
+[2025-08-16 13:59:59,144] [INFO] Syncing progress tracker
+[2025-08-16 13:59:59,146] [INFO] Checking if you have fork of git-mastery/progress
+[2025-08-16 13:59:59,149] [INFO] Running command: ['gh', 'api', 'user', '-q', '.login']
+[2025-08-16 13:59:59,844] [INFO] Running command: ['gh', 'repo', 'view', 'xiaoqi01010-gitmastery-progress', '--json', 'isFork', '--jq', '.isFork']
+[2025-08-16 14:00:00,970] [INFO] Env: {'GH_PAGER': 'cat'}
+[2025-08-16 14:00:00,971] [WARNING] You don't have a fork yet, creating one
+[2025-08-16 14:00:00,974] [INFO] Running command: ['gh', 'repo', 'fork', 'git-mastery/progress', '--default-branch-only', '--fork-name', 'xiaoqi01010-gitmastery-progress']
+[2025-08-16 14:00:01,685] [INFO] Running command: ['gh', 'repo', 'clone', 'xiaoqi01010/xiaoqi01010-gitmastery-progress', 'progress']
